@@ -11,19 +11,15 @@
 <body>
 
 <?php
-  // گرفتن داده‌ها از QueryString
   $type = isset($_GET["type"]) ? $_GET["type"] : "نامشخص";
   $time = isset($_GET["time"]) ? (int)$_GET["time"] : 0;
 
-  // عملگرها + تبدیل نوع
   $minutes = (int)($time / 60);
 
-  // آرایه associative برای توضیح کوتاه هر نوع
   $desc = array(
     "عسلی" => "زرده روان، سفیده بسته",
     "معمولی" => "زرده نیمه‌بسته",
     "سفت" => "زرده کامل بسته",
-    "املت" => "پخت ترکیبی با هم‌زدن"
   );
 
   $explain = isset($desc[$type]) ? $desc[$type] : "توضیح موجود نیست";

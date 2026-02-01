@@ -1,11 +1,12 @@
-# Egg Timer (PHP) - Wasmer Ready
+# Egg Timer (Wasmer-ready)
 
-## Local test
+## Run locally (needs PHP installed)
 ```bash
 php -S 127.0.0.1:8000 -t app
 ```
+Open: http://127.0.0.1:8000
 
-## Deploy on Wasmer
-- Push this repo to GitHub
-- In Wasmer: New App -> Import from GitHub
-- Edit `app.yaml` and set `owner` to your Wasmer username (optional if Wasmer auto-fills)
+## Deploy on Wasmer (via website or GitHub)
+- Upload this repository / zip to Wasmer
+- Wasmer will use `app.yaml` + `wasmer.toml` to run:
+  `php -S 0.0.0.0:$PORT -t /app`

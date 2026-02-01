@@ -9,7 +9,7 @@
   <script type="text/javascript">
     var eggTimes = {
       "": 0,
-      "عسلی": 0.1*60,
+      "عسلی": 3*60,
       "معمولی": 5*60,
       "سفت": 7*60,
     };
@@ -106,7 +106,6 @@
       <option value="عسلی">عسلی (3 دقیقه)</option>
       <option value="معمولی">معمولی (5 دقیقه)</option>
       <option value="سفت">سفت (7 دقیقه)</option>
-      <option value="املت">املت (10 دقیقه)</option>
     </select>
 
     <div class="timer">
@@ -122,8 +121,10 @@
     <button type="button" onclick="resetAll()">ریست</button>
 
     <div class="hint">
-      انتخاب با event انجام می‌شود، زمان با DOM نمایش داده می‌شود، و در پایان با confirm تصمیم می‌گیریم به صفحه PHP برویم یا نه.
-    </div>
+      نوع نیمروی موردنظر خود را وارد کنید و تا تمام شدن تایمر صبر کنید.
+      <br>
+      حالا شما نیمروی مورد نظر خود را به بهترین شکل ممکن آماده کردید!
+  </div>
   </div>
 </body>
 </html>

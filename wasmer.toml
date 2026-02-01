@@ -1,0 +1,20 @@
+[package]
+name = "egg-timer"
+version = "0.1.0"
+description = "Egg timer app packaged for Wasmer Edge"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+"php/php" = "=8.3.4"
+
+[fs]
+"/app" = "./app"
+
+[[command]]
+name = "run"
+module = "php/php:php"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["-t", "/app", "-S", "0.0.0.0:$PORT"]
