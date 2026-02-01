@@ -1,7 +1,0 @@
-[package]
-name = "egg-timer"
-version = "0.1.0"
-description = "Simple PHP egg timer"
-
-[commands]
-start = "php -t app -S 0.0.0.0:$PORT"

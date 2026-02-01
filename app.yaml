@@ -1,4 +1,4 @@
 kind: wasmer.io/App.v0
-owner: your-wasmer-username
+owner: taha-zaki
 name: egg-timer
 package: .
